@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\Instance">
+      <UniqueIdentifier>{44961d9d-23ac-4988-a2db-5f8c3b14655e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Components">
+      <UniqueIdentifier>{3275eaa6-efba-47f9-a527-e47bddbbf3f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Window">
+      <UniqueIdentifier>{5e6fb91a-ee73-41e6-a228-e77f876354ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Math">
+      <UniqueIdentifier>{02100fcb-0639-461d-8e4e-262a9f242bcc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -20,26 +32,29 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Camera.h">
+      <Filter>头文件\Components</Filter>
+    </ClInclude>
     <ClInclude Include="ray.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="vec3.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="root.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="GLWindow.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Sphere.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\Components</Filter>
     </ClInclude>
     <ClInclude Include="Hitable.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\Instance</Filter>
     </ClInclude>
     <ClInclude Include="hitable_list.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="GLWindow.h">
+      <Filter>头文件\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="root.h">
+      <Filter>头文件\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>头文件\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="vec3.h">
+      <Filter>头文件\Math</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

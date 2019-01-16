@@ -11,7 +11,7 @@ void resize(int width, int height) {
 void pixel()
 {
 	glClear(GL_COLOR_BUFFER_BIT);
-	render();
+	//render();
 	glDrawPixels(ImageWidth, ImageHeight, GL_RGBA, GL_UNSIGNED_BYTE, PixelData);
 	glutSwapBuffers();
 	glFlush();
@@ -43,6 +43,7 @@ void InitWindow(int argc, char** argv, unsigned int mode, int x_position, int y_
 	glutDisplayFunc(pixel);
 	glutTimerFunc(1, timer_proc, 1);
 	glutReshapeFunc(resize);
+	render();
 	glutMainLoop();
 }
 void SetPixel(const int x, const int y, vec3* c)
